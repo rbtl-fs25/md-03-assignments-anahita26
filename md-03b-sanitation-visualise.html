@@ -3256,7 +3256,7 @@ $ percent       &lt;dbl&gt; 21.870802, 19.322798, 30.863719, 5.648528, 3.136148,
 <p>If you haven’t worked with JMP indicators before, the following questions will be challenging to answer.</p>
 <ol type="1">
 <li><p>Look at the plot that you created. What do you notice about the order of the bars / order of the legend?</p>
-<p>The order of the bars in the plot matches the order of the legend.</p></li>
+<p>The order of the bars in the plot matches the order of the legend. The order they appear in is most likely due to the order they appear in the data set.</p></li>
 <li><p>What would you want to change?</p>
 <p>I would like the legend to move in order of worst to best sanitation services. E.g. starting with no sanitation facilities and moving upwards.</p></li>
 <li><p>Why did we remove “safely managed sanitation services” from the data set in Task 3?</p>
@@ -3266,8 +3266,9 @@ $ percent       &lt;dbl&gt; 21.870802, 19.322798, 30.863719, 5.648528, 3.136148,
 <section id="task-7" class="level2">
 <h2 class="anchored" data-anchor-id="task-7">Task 7</h2>
 <ol type="1">
-<li>Run the code in the code chunk below.</li>
-<li>What do you observe when you look at the code and plot?</li>
+<li><p>Run the code in the code chunk below.</p></li>
+<li><p>What do you observe when you look at the code and plot?</p>
+<p>The facet_grid function first creates subplots based on each sanitation category and residence type. The second argument of the facet_grid function allows for a different scaling of the y-axis so we can observe general trends in the data. The colors in the graph are based on each sanitation category; however, the legend was removed.</p></li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>sanitation_2020 <span class="ot">&lt;-</span> sanitation <span class="sc">|&gt;</span> </span>
